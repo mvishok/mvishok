@@ -13,11 +13,11 @@
 
 - 👨‍💻 All of my projects are available at [https://vishok.is-a.dev/](https://vishok.is-a.dev/)
 
-- 💬 Ask me about **PHP**
+- 💬 Ask me about **anything.**
 
 - 📫 How to reach me **vishokmanikantan@gmail.com**
 
-- 📄 Know about my experiences [https://vishok.tech/assets/vishok.pdf](https://vishok.tech/assets/vishok.pdf)
+- 📄 Know about my experiences [https://vishok.is-a.dev/assets/vishok.pdf](https://vishok.is-a.dev/assets/vishok.pdf)
 
 - ⚡ Fun fact **"Logic aint no magic"**
 
