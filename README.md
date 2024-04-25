@@ -11,7 +11,7 @@
 
 - 🌱 I’m currently learning **Fastify**
 
-- 👨‍💻 All of my projects are available at [https://vishok.tech/](https://vishok.tech/)
+- 👨‍💻 All of my projects are available at [https://vishok.is-a.dev/](https://vishok.is-a.dev/)
 
 - 💬 Ask me about **PHP**
 
