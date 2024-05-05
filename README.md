@@ -7,17 +7,17 @@
 
 <p align="left"> <a href="https://twitter.com/" target="blank"><img src="https://img.shields.io/twitter/follow/?logo=twitter&style=for-the-badge" alt="" /></a> </p>
 
-- 🔭 I’m currently working on [Climine Runtime](https://github.com/climine/climine-runtime)
+- 🔭 I’m currently working on [Climine Runtime](https://github.com/climine/runtime)
 
 - 🌱 I’m currently learning **Fastify**
 
-- 👨‍💻 All of my projects are available at [https://vishok.tech/](https://vishok.tech/)
+- 👨‍💻 All of my projects are available at [https://vishok.is-a.dev/](https://vishok.is-a.dev/)
 
-- 💬 Ask me about **PHP**
+- 💬 Ask me about **anything.**
 
 - 📫 How to reach me **vishokmanikantan@gmail.com**
 
-- 📄 Know about my experiences [https://vishok.tech/assets/vishok.pdf](https://vishok.tech/assets/vishok.pdf)
+- 📄 Know about my experiences [https://vishok.is-a.dev/assets/vishok.pdf](https://vishok.is-a.dev/assets/vishok.pdf)
 
 - ⚡ Fun fact **"Logic aint no magic"**
 
