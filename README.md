@@ -36,10 +36,10 @@
 <p><a target="_blank" href="https://dev.to/mvishok" style="display: inline-block;"><img src="https://img.shields.io/badge/dev-to?style=for-the-badge&logo=dev-to&logoColor=white&color=black" alt="dev.to" /></a>
 <a target="_blank" href="https://www.linkedin.com/in/in/vishokmanikantan" style="display: inline-block;"><img src="https://img.shields.io/badge/linkedin-logo?style=for-the-badge&logo=linkedin&logoColor=white&color=%230a77b6" alt="linkedin" /></a>
 <a target="_blank" href="https://www.instagram.com/vishokmanikantan" style="display: inline-block;"><img src="https://img.shields.io/badge/instagram-logo?style=for-the-badge&logo=instagram&logoColor=white&color=%23F35369" alt="instagram" /></a></p>
-<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=mvishok&show_icons=true&locale=en" alt="mvishok" /></p>
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mvishok&" alt="mvishok" /></p>
-<p><img src="https://github-readme-stats.vercel.app/api/top-langs?username=mvishok&show_icons=true&locale=en&layout=compact" alt="mvishok" /></p>
-<p><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mvishok" alt="mvishok" /></a></p>
+<p><img align="center" src="https://github-readme-stats.vercel.app/api?username=mvishok&show_icons=true&locale=en?" alt="mvishok" /></p>
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mvishok&?" alt="mvishok" /></p>
+<p><img src="https://github-readme-stats.vercel.app/api/top-langs?username=mvishok&show_icons=true&locale=en&layout=compact?" alt="mvishok" /></p>
+<p><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mvishok?" alt="mvishok" /></a></p>
 <h2>❤️ Support Me</h2>
 <p><p>
 <a href="https://www.buymeacoffee.com/vishokm">
