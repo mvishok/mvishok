@@ -371,7 +371,7 @@ article .icon {
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 0.5rem;
   color: black;
 }
 
@@ -429,4 +429,8 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+.description {
+  margin: 0.5rem;
 }
