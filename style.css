@@ -440,3 +440,15 @@ footer p {
   justify-content:space-around;
   flex-wrap:nowrap;
 }
+
+/* mobile only class */
+.mobile {
+  display: none;
+}
+
+/*display for mobile only*/
+@media screen and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+}
