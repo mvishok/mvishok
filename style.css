@@ -434,3 +434,9 @@ footer p {
 .description {
   margin: 0.5rem;
 }
+
+#icons {
+  display:flex;
+  justify-content:space-around;
+  flex-wrap:nowrap;
+}
