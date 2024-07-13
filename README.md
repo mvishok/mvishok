@@ -40,10 +40,5 @@
 <p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=mvishok&" alt="mvishok" /></p>
 <p><img src="https://github-readme-stats.vercel.app/api/top-langs?username=mvishok&show_icons=true&locale=en&layout=compact" alt="mvishok" /></p>
 <p><a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mvishok" alt="mvishok" /></a></p>
-<h2>❤️ Support Me</h2>
-<p><p>
-<a href="https://www.buymeacoffee.com/vishokm">
-<img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" width="160" alt="buymeacoffee" />
-</a>
 </p>
 </p>
