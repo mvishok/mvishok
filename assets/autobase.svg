@@ -1,0 +1,31 @@
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg467251" version="1.1" viewBox="288.38 348.72 66.23 71.57">
+  <metadata id="metadata467257" fill="#FFFFFF">
+    <rdf:rdf fill="#FFFFFF">
+      <cc:work rdf:about="" fill="#FFFFFF">
+        <dc:format fill="#FFFFFF">image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage" fill="#FFFFFF"/>
+      </cc:work>
+    </rdf:rdf>
+  </metadata>
+  <defs id="defs467255"/>
+  <linearGradient spreadMethod="pad" y2="30%" x2="-10%" y1="120%" x1="30%" id="3d_gradient2-logo-8deeb678-af7b-43af-a48a-cc612d56abf8" fill="#FFFFFF">
+    <stop id="stop467232" stop-opacity="1" stop-color="#ffffff" offset="0%" fill="#FFFFFF"/>
+    <stop id="stop467234" stop-opacity="1" stop-color="#000000" offset="100%" fill="#FFFFFF"/>
+  </linearGradient>
+  <linearGradient gradientTransform="rotate(-30)" spreadMethod="pad" y2="30%" x2="-10%" y1="120%" x1="30%" id="3d_gradient3-logo-8deeb678-af7b-43af-a48a-cc612d56abf8" fill="#FFFFFF">
+    <stop id="stop467237" stop-opacity="1" stop-color="#ffffff" offset="0%" fill="#FFFFFF"/>
+    <stop id="stop467239" stop-opacity="1" stop-color="#cccccc" offset="50%" fill="#FFFFFF"/>
+    <stop id="stop467241" stop-opacity="1" stop-color="#000000" offset="100%" fill="#FFFFFF"/>
+  </linearGradient>
+  <g id="logo-group" fill="#FFFFFF">
+    <image xlink:href="" id="container" x="272" y="144" width="480" height="480" style="display: none;" transform="translate(0 0)" fill="#FFFFFF"/>
+    <g id="logo-center" transform="translate(238.38465000000002 0)" fill="#FFFFFF">
+      <image xlink:href="" id="icon_container" style="display: none;" x="0" y="0" fill="#FFFFFF"/>
+      <g id="slogan" style="font-style:normal;font-weight:500;font-size:32px;line-height:1;font-family:'Raleway Medium Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" transform="translate(0 0)" fill="#FFFFFF"/>
+      <g id="title" style="font-style:normal;font-weight:500;font-size:72px;line-height:1;font-family:'Raleway Medium Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" transform="translate(0 0)" fill="#FFFFFF">
+        <path id="path467260" style="font-style:normal;font-weight:500;font-size:72px;line-height:1;font-family:'Raleway Medium Alt1';font-variant-ligatures:none;text-align:center;text-anchor:middle" d="m 380.86606,-44.136 -2.808,7.632 6.48,16.488 h -12.816 l -1.944,5.04 h 16.2 L 392.02606,0 h 6.912 z m -2.808,-6.984 h -5.472 L 351.63406,0 h 6.624 l 17.064,-43.632 z" stroke-width="0px" stroke-linejoin="miter" stroke-miterlimit="2" fill="#46A6A8" stroke="#46A6A8" transform="translate(0 317.728) translate(50 30.992000000000004) scale(1.4) translate(-351.63406 51.12)"/>
+      </g>
+      <image xlink:href="" id="icon" style="display: none;" x="0" y="0" fill="#FFFFFF"/>
+    </g>
+  </g>
+</svg>
