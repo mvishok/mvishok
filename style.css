@@ -368,6 +368,7 @@ article .icon {
   border-radius: 2rem;
   width: 90%;
   height: 90%;
+  object-fit: contain;
 }
 
 .project-title {
