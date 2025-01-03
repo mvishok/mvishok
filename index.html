@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <style>
         ::-webkit-scrollbar {
             width: 5px;
@@ -37,6 +38,20 @@
             font-weight: 400;
             font-style: normal;
         }
+
+        .swiper {
+            width: 1080px;
+            height: 650px;
+        }
+        /* for mobile view */
+        @media only screen and (max-width: 768px) {
+            .swiper {
+                width: 300px;
+                height: 650px;
+            }
+        }
+
+
 
     </style>
   </head>
@@ -383,240 +398,288 @@
       <p class="section__text__p1">Browse My</p>
       <h1 class="title">Highlights</h1>
       <div class="experience-details-container">
-        <div class="about-containers">
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://blog.vishok.me/static/images/projects/fastre.svg"
-                  alt="Fastre"
-                  class="project-img"
-                  style="min-height: 138px !important;"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Fastre</h2>
-              <p class="description">Fastre is a lightweight, fast runtime engine for efficient server-side rendering and dynamic content handling, using HTML-like templating. Ideal for high-performance web applications.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/fastre'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://fastre.vishok.me'">
-                  Visit
-                </button>
-              </div>
-            </div>
-          
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://blog.vishok.me/static/images/projects/autobase.svg"
-                  alt="Autobase"
-                  class="project-img"
-                  style="min-height: 138px !important;"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Autobase</h2>
-              <p class="description">Autobase is a versatile runtime engine designed for seamless data integration and API middleware. It simplifies how data is handled across different systems.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/autobase'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://autobase.vishok.me'">
-                  Visit
-                </button>
-              </div>
-            </div>
-          
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://blog.vishok.me/static/images/projects/minter.png"
-                  alt="Minter"
-                  class="project-img"
-                  style="min-height: 138px !important;"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Minter</h2>
-              <p class="description">Minter is a minimal interpreter, a scripting language for making automation simpler and easier. It is written in Java and available on FADE.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/minter'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://minter.vishok.me'">
-                  Visit
-                </button>
-              </div>
-            </div>
-          
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://blog.vishok.me/static/images/projects/fade.png"
-                  alt="FADE"
-                  class="project-img"
-                  style="min-height: 138px !important;"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">FADE</h2>
-              <p class="description">FADE is a development environment that includes Fastre and Autobase. It simplifies both frontend web development and backend data integration, making it a complete solution for modern developers.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/fade'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://fade.vishok.me'">
-                  Visit
-                </button>
-              </div>
-            </div>
-          
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://blog.vishok.me/static/images/projects/urbanscale.png"
-                  alt="Urbanscale"
-                  class="project-img"
-                  style="min-height: 138px !important;"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Urbanscale</h2>
-              <p class="description">Urbanscale is an application that evaluates urban environments by providing preset weights for categories such as residential, business, entertainment, and vacation.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/locarank'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://urbanscale.vishok.me'">
-                  Visit
-                </button>
-              </div>
-            </div>
-          
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://blog.vishok.me/static/images/projects/shootscoot.png"
-                  alt="Shoot&Scoot"
-                  class="project-img"
-                  style="min-height: 138px !important;"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Shoot&Scoot</h2>
-              <p class="description">A lightweight screenshot tool that captures your screen and compiles images into a PDF with simple hotkeys. Built for speed, simplicity, and productivity.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/shoot-scoot'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://ss.vishok.me'">
-                  Visit
-                </button>
-              </div>
-            </div>
-          
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://blog.vishok.me/static/images/projects/smartfolio.png"
-                  alt="Smartfolio"
-                  class="project-img"
-                  style="min-height: 138px !important;"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Smartfolio</h2>
-              <p class="description">Smartfolio is a command-line tool that converts your LinkedIn and GitHub profiles into a comprehensive, easy-to-use Autobase project.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/smartfolio'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://smartfolio.vishok.me'">
-                  Visit
-                </button>
-              </div>
-            </div>
-          
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://blog.vishok.me/static/images/projects/fileup.svg"
-                  alt="fileup"
-                  class="project-img"
-                  style="min-height: 138px !important;"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">fileup</h2>
-              <p class="description">fileup is a package that simplifies the auto-update process by updating individual files with remote versions based on file-specific version comments.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/fileup'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://fileup.vishok.me'">
-                  Visit
-                </button>
-              </div>
-            </div>
-          
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://blog.vishok.me/static/images/projects/remindly.png"
-                  alt="Remindly"
-                  class="project-img"
-                  style="min-height: 138px !important;"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Remindly</h2>
-              <p class="description">Remindly is a simple reminder application that functions like a to-do list, helping users stay organized and productive.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/remindly'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://remindly.vishok.me'">
-                  Visit
-                </button>
-              </div>
-            </div>
-          
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://blog.vishok.me/static/images/projects/pricenet.svg"
-                  alt="Pricenet"
-                  class="project-img"
-                  style="min-height: 138px !important;"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">Pricenet</h2>
-              <p class="description">Pricenet is a simple price comparison engine built with Python, enabling users to find the best deals and compare prices across multiple online platforms.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/pricenet'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://pricenet.vishok.me'">
-                  Visit
-                </button>
-              </div>
-            </div>
-          
-            <div class="details-container color-container">
-              <div class="article-container">
-                <img
-                  src="https://blog.vishok.me/static/images/projects/simplepolls.svg"
-                  alt="SimplePolls"
-                  class="project-img"
-                  style="min-height: 138px !important;"
-                />
-              </div>
-              <h2 class="experience-sub-title project-title">SimplePolls</h2>
-              <p class="description">SimplePolls is a versatile and user-friendly web application designed to facilitate the creation, sharing, and analysis of polls and surveys.</p>
-              <div class="btn-container">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/simplepolls'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://polls.vishok.me'">
-                  Visit
-                </button>
-              </div>
-            </div>
-          </div>
-          
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                <div class="about-containers">
+                    <div class="details-container color-container" style="height: 550px !important;">
+                    <div class="article-container">
+                        <img
+                        src="https://blog.vishok.me/static/images/projects/fastre.svg"
+                        alt="Fastre"
+                        class="project-img"
+                        style="min-height: 138px !important;"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Fastre</h2>
+                    <p class="description">Fastre is a lightweight, fast runtime engine for efficient server-side rendering and dynamic content handling, using HTML-like templating. Ideal for high-performance web applications.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/fastre'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fastre.vishok.me'">
+                        Visit
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="swiper-slide">
+                <div class="about-containers">
+                    <div class="details-container color-container" style="height: 550px !important;">
+                    <div class="article-container">
+                        <img
+                        src="https://blog.vishok.me/static/images/projects/autobase.svg"
+                        alt="Autobase"
+                        class="project-img"
+                        style="min-height: 138px !important;"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Autobase</h2>
+                    <p class="description">Autobase is a versatile runtime engine designed for seamless data integration and API middleware. It simplifies how data is handled across different systems.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/autobase'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://autobase.vishok.me'">
+                        Visit
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="swiper-slide">
+                <div class="about-containers">
+                    <div class="details-container color-container" style="height: 550px !important;">
+                    <div class="article-container">
+                        <img
+                        src="https://blog.vishok.me/static/images/projects/minter.png"
+                        alt="Minter"
+                        class="project-img"
+                        style="min-height: 138px !important;"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Minter</h2>
+                    <p class="description">Minter is a minimal interpreter, a scripting language for making automation simpler and easier. It is written in Java and available on FADE.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/minter'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://minter.vishok.me'">
+                        Visit
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="swiper-slide">
+                <div class="about-containers">
+                    <div class="details-container color-container" style="height: 550px !important;">
+                    <div class="article-container">
+                        <img
+                        src="https://blog.vishok.me/static/images/projects/fade.png"
+                        alt="FADE"
+                        class="project-img"
+                        style="min-height: 138px !important;"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">FADE</h2>
+                    <p class="description">FADE is a development environment that includes Fastre and Autobase. It simplifies both frontend web development and backend data integration, making it a complete solution for modern developers.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/fade'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fade.vishok.me'">
+                        Visit
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
 
+                <div class="swiper-slide">
+                <div class="about-containers">          
+                    <div class="details-container color-container" style="height: 550px !important;">
+                    <div class="article-container">
+                        <img
+                        src="https://blog.vishok.me/static/images/projects/urbanscale.png"
+                        alt="Urbanscale"
+                        class="project-img"
+                        style="min-height: 138px !important;"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Urbanscale</h2>
+                    <p class="description">Urbanscale is an application that evaluates urban environments by providing preset weights for categories such as residential, business, entertainment, and vacation.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/locarank'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://urbanscale.vishok.me'">
+                        Visit
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="swiper-slide">
+                <div class="about-containers">
+                    <div class="details-container color-container" style="height: 550px !important;">
+                    <div class="article-container">
+                        <img
+                        src="https://blog.vishok.me/static/images/projects/shootscoot.png"
+                        alt="Shoot&Scoot"
+                        class="project-img"
+                        style="min-height: 138px !important;"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Shoot&Scoot</h2>
+                    <p class="description">A lightweight screenshot tool that captures your screen and compiles images into a PDF with simple hotkeys. Built for speed, simplicity, and productivity.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/shoot-scoot'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://ss.vishok.me'">
+                        Visit
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="swiper-slide">
+                <div class="about-containers">
+                    <div class="details-container color-container" style="height: 550px !important;">
+                    <div class="article-container">
+                        <img
+                        src="https://blog.vishok.me/static/images/projects/smartfolio.png"
+                        alt="Smartfolio"
+                        class="project-img"
+                        style="min-height: 138px !important;"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Smartfolio</h2>
+                    <p class="description">Smartfolio is a command-line tool that converts your LinkedIn and GitHub profiles into a comprehensive, easy-to-use Autobase project.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/smartfolio'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://smartfolio.vishok.me'">
+                        Visit
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+
+                <div class="swiper-slide">
+                <div class="about-containers">
+                    <div class="details-container color-container" style="height: 550px !important;">
+                    <div class="article-container">
+                        <img
+                        src="https://blog.vishok.me/static/images/projects/fileup.svg"
+                        alt="fileup"
+                        class="project-img"
+                        style="min-height: 138px !important;"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">fileup</h2>
+                    <p class="description">fileup is a package that simplifies the auto-update process by updating individual files with remote versions based on file-specific version comments.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/fileup'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fileup.vishok.me'">
+                        Visit
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="swiper-slide">
+                <div class="about-containers">
+                    <div class="details-container color-container" style="height: 550px !important;">
+                    <div class="article-container">
+                        <img
+                        src="https://blog.vishok.me/static/images/projects/remindly.png"
+                        alt="Remindly"
+                        class="project-img"
+                        style="min-height: 138px !important;"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Remindly</h2>
+                    <p class="description">Remindly is a simple reminder application that functions like a to-do list, helping users stay organized and productive.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/remindly'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://remindly.vishok.me'">
+                        Visit
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                    
+                <div class="swiper-slide">
+                <div class="about-containers">
+                    <div class="details-container color-container" style="height: 550px !important;">
+                    <div class="article-container">
+                        <img
+                        src="https://blog.vishok.me/static/images/projects/pricenet.svg"
+                        alt="Pricenet"
+                        class="project-img"
+                        style="min-height: 138px !important;"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">Pricenet</h2>
+                    <p class="description">Pricenet is a simple price comparison engine built with Python, enabling users to find the best deals and compare prices across multiple online platforms.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/pricenet'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://pricenet.vishok.me'">
+                        Visit
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="swiper-slide">
+                <div class="about-containers">
+                    <div class="details-container color-container" style="height: 550px !important;">
+                    <div class="article-container">
+                        <img
+                        src="https://blog.vishok.me/static/images/projects/simplepolls.svg"
+                        alt="SimplePolls"
+                        class="project-img"
+                        style="min-height: 138px !important;"
+                        />
+                    </div>
+                    <h2 class="experience-sub-title project-title">SimplePolls</h2>
+                    <p class="description">SimplePolls is a versatile and user-friendly web application designed to facilitate the creation, sharing, and analysis of polls and surveys.</p>
+                    <div class="btn-container">
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/simplepolls'">
+                        Github
+                        </button>
+                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://polls.vishok.me'">
+                        Visit
+                        </button>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-pagination"></div>
+
+        </div>
         <center><p class="section__text__p2" style="font-size:x-large !important">
             These are some of my projects, visit my <a href="https://github.com/mvishok/?tab=repositories">Github Profile</a> for all.
         </p></center>
@@ -662,6 +725,54 @@
         करोमि यद्यत्सकलं परस्मै । <br class="mobile">नारायणायेति समर्पयामि ॥
     </p>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const swiper = new Swiper('.swiper', {
+        // Optional parameters
+        direction: 'horizontal',
+        loop: true,
+        //loop speed
+        speed: 1000,
+        slidesPerView: 1,
+        spaceBetween: 10,
+
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            dynamicBullets: true,
+        },
+
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // And if we need scrollbar
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+        
+        breakpoints: {
+            640: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+            },
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+            },
+        },
+
+        });
+    });
+    </script>
+
   </body>
 </html>
