@@ -1,778 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Portfolio" />
-    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
-    <title>Vishok Manikantan</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <title>Vishok Manikantan | Portfolio</title>
+    <meta name="description" content="Premium Portfolio of Vishok Manikantan - Products, Open Source, and Engineering" />
+    
+    <!-- Google Fonts: Inter and Space Grotesk -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <style>
-        ::-webkit-scrollbar {
-            width: 5px;
-        }
-
-        /* Track */
-        ::-webkit-scrollbar-track {
-            background: #fafafa;
-        }
-
-        /* Handle */
-        ::-webkit-scrollbar-thumb {
-            background: rgb(53, 53, 53);
-        }
-
-        /* Handle on hover */
-        ::-webkit-scrollbar-thumb:hover {
-            background: rgb(13, 13, 13);
-        }
-
-        .tiro-devanagari {
-            font-family: "Tiro Devanagari Sanskrit", serif;
-            font-weight: 400;
-            font-style: normal;
-        }
-
-        .swiper {
-            width: 1080px;
-            height: 650px;
-        }
-        /* for mobile view */
-        @media only screen and (max-width: 768px) {
-            .swiper {
-                width: 300px;
-                height: 650px;
-            }
-        }
-
-
-
-    </style>
-  </head>
-  <body>
-    <img src="./assets/profile-pic.png" alt="Vishok profile picture" style="display: none;" />
-    <nav id="desktop-nav">
-      <div class="logo">Vishok M
-        <center>
-        <p style="font-size: 0px;" id="icons">
-          <a href="https://github.com/mvishok/"><img src="assets/github.png" height="20px"/></a>
-          <a href="https://instagram.com/vishokmanikantan"><img src="/assets/instagram.webp" height="20px"/></a>
-          <a href="https://linkedin.com/in/vishokmanikantan"><img src="/assets/linkedin.png" height="20px"></a>
-        </p>
-      </center>
-      </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="https://blog.vishok.me/">Blog</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">Vishok M
-        <center>
-          <p style="font-size: 0px;" id="icons">
-          <a href="https://github.com/mvishok/"><img src="assets/github.png" height="14px"/></a>
-          <a href="https://instagram.com/vishokmanikantan"><img src="/assets/instagram.webp" height="14px"/></a>
-          <a href="https://linkedin.com/in/vishokmanikantan"><img src="/assets/linkedin.png" height="14px"></a>
-          </p>
-        </center>
-      </div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Highlights</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Vishok profile picture" />
-      </div>
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Vishok Manikantan</h1>
-        <p class="section__text__p2">Beginner Full Stack</p>
-        <div class="btn-container">
-          <a href="/assets/vishok.pdf" target="_blank">
-          <button class="btn btn-color-2">
-            Resume
-          </button>
-          </a>
-          <a href="https://github.com/mvishok" target="_blank">
-          <button class="btn btn-color-1">
-            GitHub
-          </button>
-        </a>
-        </div>
-        <div id="socials-container">
-                            </div>
-      </div>
-    </section>
-    <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/nataraja.png"
-            alt="Nataraja"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Developing From <br />Thirteen Years</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>BTech Computer Science<br />SRMIST, KTR</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I'm a second-year college student with a passion for software development. I've been learning and experimenting with various languages and technologies, including C, Python, .NET, PHP, and JavaScript. I'm also familiar with databases like MySQL and MongoDB. I'm eager to apply these skills to real-world projects and collaborate with others to learn and grow.
-              In my free time, I enjoy photography, cricket, and music. These hobbies help me relax and recharge.
-              I'm open to collaboration and project submissions that can help me improve my skills and learn from others. If you have any projects or ideas you'd like to work on, feel free to reach out!
-            </p>
-          </div>
-        </div>
-      </div>
-          </section>
-    <section id="experience" style="height: auto;">
-      <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Frontend</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/html.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://html.spec.whatwg.org/multipage/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>HTML5</h3>
-                  </a>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/css.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://wiki.csswg.org/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>CSS3</h3>
-                  </a>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/js.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://developer.oracle.com/languages/javascript.html" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>JavaScript</h3>
-                  </a>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/jq.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://jquery.com/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>JQuery</h3>
-                  </a>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Backend</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/php.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://www.php.net/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>PHP</h3>
-                  </a>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/express.png"
-                  alt="Express icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://expressjs.com/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>Express JS</h3>
-                  </a>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/flask.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://flask.palletsprojects.com/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>Flask</h3>
-                  </a>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/fastify.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://www.fastify.io/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>Fastify</h3>
-                  </a>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">Desktop</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/python.svg"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://www.python.org/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>Python</h3>
-                  </a>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/node.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://nodejs.org/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>NodeJS</h3>
-                  </a>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/csharp.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://dotnet.microsoft.com/en-us/languages/csharp" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>C#</h3>
-                  </a>
-                  <p>Basic &#10240;&#10240;&#10240;&#10240;&#10240;&#10240;</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/go.svg"
-                  alt="Experience icon"
-                  class="icon"
-                  width="32"
-                />
-                <div>
-                  <a href="https://go.dev/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>Go</h3>
-                  </a>
-                  <p>Basic &#10240;&#10240;&#10240;&#10240;&#10240;&#10240;</p>
-                </div>
-              </article>
-            </div>
-          </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">Databases</h2>
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/psql.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://www.postgresql.org/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>PostgreSQL</h3>
-                  </a>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/mysql.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://www.mysql.com/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>MySQL</h3>
-                  </a>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/mongo.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <a href="https://www.mongodb.com/" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
-                  <h3>MongoDB</h3>
-                  </a>
-                  <p>Basic &#10240;&#10240;&#10240;&#10240;&#10240;&#10240;</p>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </div>
-          </section>
-    <section id="projects">
-      <p class="section__text__p1">Browse My</p>
-      <h1 class="title">Highlights</h1>
-      <div class="experience-details-container">
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                <div class="about-containers">
-                    <div class="details-container color-container" style="height: 550px !important;">
-                    <div class="article-container">
-                        <img
-                        src="https://blog.vishok.me/static/images/projects/fastre.svg"
-                        alt="Fastre"
-                        class="project-img"
-                        style="min-height: 138px !important;"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Fastre</h2>
-                    <p class="description">Fastre is a lightweight, fast runtime engine for efficient server-side rendering and dynamic content handling, using HTML-like templating. Ideal for high-performance web applications.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/fastre'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fastre.vishok.me'">
-                        Visit
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                
-                <div class="swiper-slide">
-                <div class="about-containers">
-                    <div class="details-container color-container" style="height: 550px !important;">
-                    <div class="article-container">
-                        <img
-                        src="https://blog.vishok.me/static/images/projects/autobase.svg"
-                        alt="Autobase"
-                        class="project-img"
-                        style="min-height: 138px !important;"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Autobase</h2>
-                    <p class="description">Autobase is a versatile runtime engine designed for seamless data integration and API middleware. It simplifies how data is handled across different systems.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/autobase'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://autobase.vishok.me'">
-                        Visit
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                
-                <div class="swiper-slide">
-                <div class="about-containers">
-                    <div class="details-container color-container" style="height: 550px !important;">
-                    <div class="article-container">
-                        <img
-                        src="https://blog.vishok.me/static/images/projects/minter.png"
-                        alt="Minter"
-                        class="project-img"
-                        style="min-height: 138px !important;"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Minter</h2>
-                    <p class="description">Minter is a minimal interpreter, a scripting language for making automation simpler and easier. It is written in Java and available on FADE.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/minter'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://minter.vishok.me'">
-                        Visit
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                
-                <div class="swiper-slide">
-                <div class="about-containers">
-                    <div class="details-container color-container" style="height: 550px !important;">
-                    <div class="article-container">
-                        <img
-                        src="https://blog.vishok.me/static/images/projects/fade.png"
-                        alt="FADE"
-                        class="project-img"
-                        style="min-height: 138px !important;"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">FADE</h2>
-                    <p class="description">FADE is a development environment that includes Fastre and Autobase. It simplifies both frontend web development and backend data integration, making it a complete solution for modern developers.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/fade'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fade.vishok.me'">
-                        Visit
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="swiper-slide">
-                <div class="about-containers">          
-                    <div class="details-container color-container" style="height: 550px !important;">
-                    <div class="article-container">
-                        <img
-                        src="https://blog.vishok.me/static/images/projects/urbanscale.png"
-                        alt="Urbanscale"
-                        class="project-img"
-                        style="min-height: 138px !important;"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Urbanscale</h2>
-                    <p class="description">Urbanscale is an application that evaluates urban environments by providing preset weights for categories such as residential, business, entertainment, and vacation.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/locarank'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://urbanscale.vishok.me'">
-                        Visit
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                
-                <div class="swiper-slide">
-                <div class="about-containers">
-                    <div class="details-container color-container" style="height: 550px !important;">
-                    <div class="article-container">
-                        <img
-                        src="https://blog.vishok.me/static/images/projects/shootscoot.png"
-                        alt="Shoot&Scoot"
-                        class="project-img"
-                        style="min-height: 138px !important;"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Shoot&Scoot</h2>
-                    <p class="description">A lightweight screenshot tool that captures your screen and compiles images into a PDF with simple hotkeys. Built for speed, simplicity, and productivity.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/shoot-scoot'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://ss.vishok.me'">
-                        Visit
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                
-                <div class="swiper-slide">
-                <div class="about-containers">
-                    <div class="details-container color-container" style="height: 550px !important;">
-                    <div class="article-container">
-                        <img
-                        src="https://blog.vishok.me/static/images/projects/smartfolio.png"
-                        alt="Smartfolio"
-                        class="project-img"
-                        style="min-height: 138px !important;"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Smartfolio</h2>
-                    <p class="description">Smartfolio is a command-line tool that converts your LinkedIn and GitHub profiles into a comprehensive, easy-to-use Autobase project.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/smartfolio'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://smartfolio.vishok.me'">
-                        Visit
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-
-                <div class="swiper-slide">
-                <div class="about-containers">
-                    <div class="details-container color-container" style="height: 550px !important;">
-                    <div class="article-container">
-                        <img
-                        src="https://blog.vishok.me/static/images/projects/fileup.svg"
-                        alt="fileup"
-                        class="project-img"
-                        style="min-height: 138px !important;"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">fileup</h2>
-                    <p class="description">fileup is a package that simplifies the auto-update process by updating individual files with remote versions based on file-specific version comments.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/fileup'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://fileup.vishok.me'">
-                        Visit
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                
-                <div class="swiper-slide">
-                <div class="about-containers">
-                    <div class="details-container color-container" style="height: 550px !important;">
-                    <div class="article-container">
-                        <img
-                        src="https://blog.vishok.me/static/images/projects/remindly.png"
-                        alt="Remindly"
-                        class="project-img"
-                        style="min-height: 138px !important;"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Remindly</h2>
-                    <p class="description">Remindly is a simple reminder application that functions like a to-do list, helping users stay organized and productive.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/remindly'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://remindly.vishok.me'">
-                        Visit
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                    
-                <div class="swiper-slide">
-                <div class="about-containers">
-                    <div class="details-container color-container" style="height: 550px !important;">
-                    <div class="article-container">
-                        <img
-                        src="https://blog.vishok.me/static/images/projects/pricenet.svg"
-                        alt="Pricenet"
-                        class="project-img"
-                        style="min-height: 138px !important;"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">Pricenet</h2>
-                    <p class="description">Pricenet is a simple price comparison engine built with Python, enabling users to find the best deals and compare prices across multiple online platforms.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/pricenet'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://pricenet.vishok.me'">
-                        Visit
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                
-                <div class="swiper-slide">
-                <div class="about-containers">
-                    <div class="details-container color-container" style="height: 550px !important;">
-                    <div class="article-container">
-                        <img
-                        src="https://blog.vishok.me/static/images/projects/simplepolls.svg"
-                        alt="SimplePolls"
-                        class="project-img"
-                        style="min-height: 138px !important;"
-                        />
-                    </div>
-                    <h2 class="experience-sub-title project-title">SimplePolls</h2>
-                    <p class="description">SimplePolls is a versatile and user-friendly web application designed to facilitate the creation, sharing, and analysis of polls and surveys.</p>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mvishok/simplepolls'">
-                        Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://polls.vishok.me'">
-                        Visit
-                        </button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
-
-              <!-- If we need navigation buttons -->
-              <div class="swiper-pagination"></div>
-
-        </div>
-        <center><p class="section__text__p2" style="font-size:x-large !important">
-            These are some of my projects, visit my <a href="https://github.com/mvishok/?tab=repositories">Github Profile</a> for all.
-        </p></center>
-      </div>
-          </section>
-    <section id="contact">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:hello@vishok.me">hello@vishok.me</a></p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p><a href="https://www.linkedin.com/in/vishokmanikantan">@vishokmanikantan</a></p>
-        </div>
-        <div class="contact-info-container">
-            <img
-              src="./assets/instagram.webp"
-              alt="Insta icon"
-              class="icon contact-icon"
-            />
-            <p><a href="https://www.instagram.com/vishokmanikantan">@vishokmanikantan</a></p>
-          </div>  
-        </div>
-        
-    </section>
-    <footer>
-
-    <p
-      style="font-size: larger !important;"
-      class="tiro-devanagari"
-    >
-        करोमि यद्यत्सकलं परस्मै । <br class="mobile">नारायणायेति समर्पयामि ॥
-    </p>
-    </footer>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
     <script>
-document.addEventListener('DOMContentLoaded', function () {
-    const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
-        //loop speed
-        speed: 1000,
-        slidesPerView: 1,
-        spaceBetween: 10,
-
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-            dynamicBullets: true,
-        },
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-
-        // And if we need scrollbar
-        scrollbar: {
-            el: '.swiper-scrollbar',
-        },
-        
-        breakpoints: {
-            640: {
-                slidesPerView: 1,
-                spaceBetween: 20,
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              display: ['Space Grotesk', 'sans-serif'],
             },
-            768: {
-                slidesPerView: 2,
-                spaceBetween: 40,
+            colors: {
+              background: '#f8fafc', // Slate 50 - Bright and Clean
+              surface: '#ffffff',    // Pure White
+              primary: '#0f172a',    // Slate 900 - High contrast text
+              secondary: '#64748b',  // Slate 500 - Soft text
+              accent: '#4f46e5',     // Indigo 600
+              brand: {
+                blue: '#3b82f6',
+                pink: '#ec4899',
+                orange: '#f97316',
+                teal: '#14b8a6',
+              }
             },
-            1024: {
-                slidesPerView: 3,
-                spaceBetween: 50,
+            animation: {
+              'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+              'blob': 'blob 10s infinite',
+              'float': 'float 6s ease-in-out infinite',
             },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              blob: {
+                '0%': { transform: 'translate(0px, 0px) scale(1)' },
+                '33%': { transform: 'translate(30px, -50px) scale(1.1)' },
+                '66%': { transform: 'translate(-20px, 20px) scale(0.9)' },
+                '100%': { transform: 'translate(0px, 0px) scale(1)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          },
         },
-
-        });
-    });
+      }
     </script>
+    <style>
+      body {
+        background-color: #f8fafc;
+        color: #0f172a;
+        overflow-x: hidden;
+      }
+      /* Soft Glass Panel for Light Mode */
+      .glass-panel {
+        background: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      }
+      .glass-panel:hover {
+        background: rgba(255, 255, 255, 0.85);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.025);
+      }
+      
+      .text-gradient {
+        background: linear-gradient(135deg, #4f46e5 0%, #ec4899 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      .text-gradient-vibrant {
+        background: linear-gradient(to right, #2563eb, #db2777, #ea580c);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+      
+      ::selection {
+        background: #4f46e5;
+        color: white;
+      }
+    </style>
 
-  </body>
+<link rel="stylesheet" href="/index.css">
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-BNQHlfG7.js"></script>
+</head>
+  <body>
+    <div id="root"></div>
+</body>
 </html>
