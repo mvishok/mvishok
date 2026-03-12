@@ -1,0 +1,15 @@
+{
+  "heroTitle": "Fullstack Developer",
+  "bio": "I build accessible, pixel-perfect digital experiences for the web.            Passionate about crafting interfaces that blend thoughtful design with robust engineering.",
+  "aboutTitle": "Building the future, one line at a time",
+  "aboutText": [
+    "I'm a developer passionate about crafting accessible, pixel-perfect user interfaces that blend thoughtful design with robust engineering. My favorite work lies at the intersection of design and development.",
+    "I recently graduated with a degree in Computer Science and I'm eager to join a team where I can contribute, learn, and grow. I'm particularly interested in frontend development, but I enjoy exploring the full stack.",
+    "When I'm not coding, you'll find me contributing to open source, reading about new technologies, or working on side projects to sharpen my skills."
+  ],
+  "contactTitle": "Let's work together",
+  "contactBio": "I'm currently looking for full-time opportunities. If you're interested in working together or just want to say hi, feel free to reach out!",
+  "username": "mvishok",
+  "basePath": "/mvishok",
+  "assetPrefix": "/mvishok"
+}
