@@ -1,12 +1,11 @@
 {
-  "heroText": "Crafting",
-  "heroTextHighlight": "digital experiences",
   "heroSubText": "Full-stack developer building modern web applications with React, Next.js, and thoughtful design",
   "aboutP1": "I'm a passionate developer focused on creating beautiful, functional web experiences. With expertise in modern frontend frameworks and backend technologies, I bridge the gap between design and engineering.",
   "aboutP2": "My journey started with a curiosity about how things work. Over the years, I've learned that great software is about understanding user needs and writing clean, maintainable code.",
   "skillsSubText": "Specialized expertise in modern web technologies and development practices",
   "projectsSubText": "A showcase of recent work demonstrating design thinking and technical execution",
   "contactSubText": "I'm always interested in hearing about new opportunities and collaborations. Feel free to reach out through any of these channels.",
+  "footer": "Built and managed with Aures",
   "username": "mvishok",
   "domain": "vishok.me",
   "url": "https://vishok.me"
