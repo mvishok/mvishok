@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio" />
+  <link rel="icon" href="./assets/favicon.ico" type="image/x-icon" />
+  <title>Vishok Manikantan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Sanskrit:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <style>
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #fafafa;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: rgb(53, 53, 53);
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgb(13, 13, 13);
+    }
+
+    .tiro-devanagari {
+      font-family: "Tiro Devanagari Sanskrit", serif;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+    .swiper {
+      width: 1080px;
+      height: 650px;
+    }
+
+    /* for mobile view */
+    @media only screen and (max-width: 768px) {
+      .swiper {
+        width: 300px;
+        height: 650px;
+      }
+    }
+
+    /* Improved Card & Swiper UI */
+    .swiper {
+      width: 100%;
+      max-width: 1200px;
+      height: auto;
+      padding-bottom: 50px !important;
+      padding-top: 20px !important; 
+      /* Space for pagination dots */
+    }
+
+    .swiper-slide {
+      display: flex;
+      justify-content: center;
+      height: auto;
+    }
+
+    .details-container.color-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+      max-width: 350px;
+      height: 500px !important;
+      /* Fixed height for uniformity */
+      padding: 1.5rem;
+      border-radius: 2rem;
+      border: rgb(53, 53, 53) 0.1rem solid;
+      background: white;
+      transition: transform 0.3s ease;
+    }
+
+    .details-container.color-container:hover {
+      transform: translateY(-5px);
+      border-color: rgb(0, 0, 0);
+    }
+
+    .project-img {
+      width: 100%;
+      height: 180px !important;
+      /* Fixed image height */
+      object-fit: contain;
+      /* Ensures logo isn't cropped */
+      border-radius: 1.5rem;
+      background: #fdfdfd;
+    }
+
+    .project-title {
+      margin: 1rem 0 0.5rem;
+      font-size: 1.5rem;
+    }
+
+    .description {
+      font-size: 0.95rem;
+      color: #444;
+      line-height: 1.4;
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      /* Limits text to 4 lines */
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin-bottom: 1rem;
+    }
+
+    /* Pagination Styling */
+    .swiper-pagination-bullet {
+      background: #ccc !important;
+      opacity: 1 !important;
+      width: 10px !important;
+      height: 10px !important;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: rgb(53, 53, 53) !important;
+      width: 25px !important;
+      /* Long pill shape for active state */
+      border-radius: 5px !important;
+    }
+
+    @media only screen and (max-width: 768px) {
+      .swiper {
+        width: 90vw;
+      }
+
+      .details-container.color-container {
+        height: 480px !important;
+      }
+    }
+
+    
+  </style>
+</head>
+
+<body>
+  <img src="./assets/profile-pic.png" alt="Vishok profile picture" style="display: none;" />
+  <nav id="desktop-nav">
+    <div class="logo">Vishok M
+      <center>
+        <p style="font-size: 0px;" id="icons">
+          <a href="https://github.com/mvishok/"><img src="assets/github.png" height="20px" /></a>
+          <a href="https://instagram.com/vishokmanikantan"><img src="/assets/instagram.webp" height="20px" /></a>
+          <a href="https://linkedin.com/in/vishokmanikantan"><img src="/assets/linkedin.png" height="20px"></a>
+        </p>
+      </center>
+    </div>
+    <div>
+      <ul class="nav-links">
+        <!-- <li><a href="https://blog.vishok.me/">Blog</a></li> -->
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Vishok M
+      <center>
+        <p style="font-size: 0px;" id="icons">
+          <a href="https://github.com/mvishok/"><img src="assets/github.png" height="14px" /></a>
+          <a href="https://instagram.com/vishokmanikantan"><img src="/assets/instagram.webp" height="14px" /></a>
+          <a href="https://linkedin.com/in/vishokmanikantan"><img src="/assets/linkedin.png" height="14px"></a>
+        </p>
+      </center>
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Highlights</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Vishok profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Vishok Manikantan</h1>
+      <p class="section__text__p2">Full Stack Developer</p>
+      <div class="btn-container">
+        <a href="/assets/vishok.pdf" target="_blank">
+          <button class="btn btn-color-2">
+            Resume
+          </button>
+        </a>
+        <a href="https://github.com/mvishok" target="_blank">
+          <button class="btn btn-color-1">
+            GitHub
+          </button>
+        </a>
+      </div>
+      <div id="socials-container">
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/nataraja.png" alt="Nataraja" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>Developing From <br />Thirteen Years</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>BTech Computer Science<br />SRMIST, KTR</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I'm a third-year college student with a passion for software development. I've been learning and
+            experimenting with various languages and technologies, including C, Python, .NET, PHP, and JavaScript. I'm
+            also familiar with databases like MySQL and MongoDB. I'm eager to apply these skills to real-world projects
+            and collaborate with others to learn and grow.
+            In my free time, I enjoy photography, cricket, and music. These hobbies help me relax and recharge.
+            I'm open to collaboration and project submissions that can help me improve my skills and learn from others.
+            If you have any projects or ideas you'd like to work on, feel free to reach out!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="experience" style="height: auto;">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skillset</h1>
+    <div class="experience-details-container"></div>
+    <div class="experience-details-container"></div>
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My</p>
+    <h1 class="title">Highlights</h1>
+    <div class="experience-details-container">
+      <div class="swiper">
+        <div class="swiper-wrapper"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <center>
+        <p class="section__text__p2" style="font-size:x-large !important">
+          These are some of my projects, visit my <a href="https://github.com/mvishok/?tab=repositories">Github
+            Profile</a> for all.
+        </p>
+      </center>
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:hello@vishok.me">hello@vishok.me</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/vishokmanikantan">@vishokmanikantan</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/instagram.webp" alt="Insta icon" class="icon contact-icon" />
+        <p><a href="https://www.instagram.com/vishokmanikantan">@vishokmanikantan</a></p>
+      </div>
+    </div>
+
+  </section>
+
+  <footer>
+    <p style="font-size: larger !important;" class="tiro-devanagari">
+      करोमि यद्यत्सकलं परस्मै । <br class="mobile">नारायणायेति समर्पयामि ॥
+    </p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+    // --------------------------------------------------------------
+    // DATA CONFIGURATION ARRAYS (easy to manage and update)
+    // --------------------------------------------------------------
+
+    const skillsData = [
+      {
+        title: "Languages",
+        skills: [
+          { icon: "./assets/javascript.png", link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript", name: "JavaScript", level: "Advanced" },
+          { icon: "./assets/php.png", link: "https://www.php.net/docs.php", name: "PHP", level: "Advanced" },
+          { icon: "./assets/python.png", link: "https://docs.python.org/3/", name: "Python", level: "Advanced" },
+          { icon: "./assets/swift.png", link: "https://www.swift.org/documentation/", name: "Swift", level: "Intermediate" },
+          { icon: "./assets/kotlin.png", link: "https://kotlinlang.org/docs/home.html", name: "Kotlin", level: "Intermediate" },
+          { icon: "./assets/go.png", link: "https://golang.org/doc/", name: "Go", level: "Beginner" },
+        ]
+      },
+      {
+        title: "Frameworks",
+        skills: [
+          { icon: "./assets/fastapi.png", link: "https://fastapi.tiangolo.com/", name: "FastAPI", level: "Intermediate" },
+          { icon: "./assets/fastify.png", link: "https://www.fastify.io/docs/latest/", name: "Fastify", level: "Intermediate" },
+          { icon: "./assets/nextjs.png", link: "https://nextjs.org/docs", name: "Next.js", level: "Intermediate" },
+          { icon: "./assets/symfony.png", link: "https://symfony.com/doc/current/index.html", name: "Symfony", level: "Intermediate" },
+          { icon: "./assets/uikit.png", link: "https://developer.apple.com/documentation/uikit", name: "UIKit", level: "Intermediate" },
+          { icon: "./assets/materialui.png", link: "https://mui.com/material-ui/getting-started/", name: "Material UI", level: "Intermediate" }
+        ]
+      },
+      {
+        title: "Cloud",
+        skills: [
+          { icon: "./assets/supabase.png", link: "https://supabase.com/docs", name: "Supabase", level: "Intermediate" },
+          { icon: "./assets/appwrite.png", link: "https://appwrite.io/docs", name: "Appwrite", level: "Intermediate" },
+          { icon: "./assets/azure.png", link: "https://learn.microsoft.com/en-us/azure/?product=popular", name: "Azure", level: "Intermediate" },
+          { icon: "./assets/gcp.png", link: "https://cloud.google.com/docs", name: "GCP", level: "Intermediate" },
+          { icon: "./assets/cloudflare.png", link: "https://cloudflare.com/", name: "Cloudflare", level: "Intermediate" },
+          { icon: "./assets/vercel.png", link: "https://vercel.com/docs", name: "Vercel", level: "Intermediate" }
+        ]
+      },
+      {
+        title: "Database & Tooling",
+        skills: [
+          { icon: "./assets/mysql.png", link: "https://dev.mysql.com/doc/refman/8.0/en/", name: "MySQL", level: "Advanced" },
+          { icon: "./assets/postgresql.png", link: "https://www.postgresql.org/docs/", name: "PostgreSQL", level: "Advanced" },
+          { icon: "./assets/intellij.png", link: "https://www.jetbrains.com/idea/documentation/", name: "IntelliJ IDEA", level: "Experienced" },
+          { icon: "./assets/vscode.png", link: "https://code.visualstudio.com/docs", name: "VS Code", level: "Experienced" },
+          { icon: "./assets/xcode.png", link: "https://developer.apple.com/documentation/xcode", name: "XCode", level: "Intermediate" },
+          { icon: "./assets/figma.png", link: "https://help.figma.com/hc/en-us", name: "Figma", level: "Intermediate" }
+        ]
+      }
+    ];
+
+    const projectsData = [
+
+      {
+        img: "https://github.com/auresorg/API/blob/main/preview.png?raw=true",
+        title: "Aures",
+        desc: "Professionals juggling multiple resumes and portfolios can now consolidate them into a single auto‑updating live profile on a unique URL, eliminating manual version control and slashing update time by 90%",
+        github: "https://github.com/auresorg/API",
+        visit: "https://aures.vishok.me"
+      },
+      {
+        img: "./assets/locent.png",
+        title: "Locent",
+        desc: "Locent is a location intelligence engine that evaluates how suitable a place is based on what a person actually wants to do there.",
+        github: "https://github.com/mvishok/locent",
+        visit: "https://go.vishok.me/locent"
+      },
+      {
+        img: "https://github.com/srraghunath/FitClient/blob/main/preview.png?raw=true",
+        title: "FitBond",
+        desc: "Aures is a modern web application that helps professionals manage their resumes and portfolios efficiently.",
+        github: "https://github.com/srraghunath/FitClient",
+        visit: "https://apps.apple.com/us/app/fitbond-train-track-transform/id6761357281"
+      },
+      {
+        img: "https://blog.vishok.me/static/images/projects/shootscoot.png",
+        title: "Shoot&Scoot",
+        desc: "A lightweight screenshot tool that captures your screen and compiles images into a PDF with simple hotkeys. Built for speed, simplicity, and productivity.",
+        github: "https://github.com/mvishok/shoot-scoot",
+        visit: "https://ss.vishok.me"
+      },
+      {
+        img: "https://blog.vishok.me/static/images/projects/fastre.svg",
+        title: "Fastre",
+        desc: "Fastre is a lightweight, fast runtime engine for efficient server-side rendering and dynamic content handling, using HTML-like templating. Ideal for high-performance web applications.",
+        github: "https://github.com/mvishok/fastre",
+        visit: "https://fastre.vishok.me"
+      },
+      {
+        img: "https://blog.vishok.me/static/images/projects/autobase.svg",
+        title: "Autobase",
+        desc: "Autobase is a versatile runtime engine designed for seamless data integration and API middleware. It simplifies how data is handled across different systems.",
+        github: "https://github.com/mvishok/autobase",
+        visit: "https://autobase.vishok.me"
+      },
+      {
+        img: "https://blog.vishok.me/static/images/projects/minter.png",
+        title: "Minter",
+        desc: "Minter is a minimal interpreter, a scripting language for making automation simpler and easier. It is written in Java and available on FADE.",
+        github: "https://github.com/mvishok/minter",
+        visit: "https://minter.vishok.me"
+      },
+      {
+        img: "https://blog.vishok.me/static/images/projects/remindly.png",
+        title: "Remindly",
+        desc: "Remindly is a simple reminder application that functions like a to-do list, helping users stay organized and productive.",
+        github: "https://github.com/mvishok/remindly",
+        visit: "https://remindly.vishok.me"
+      },
+      {
+        img: "https://blog.vishok.me/static/images/projects/pricenet.svg",
+        title: "Pricenet",
+        desc: "Pricenet is a simple price comparison engine built with Python, enabling users to find the best deals and compare prices across multiple online platforms.",
+        github: "https://github.com/mvishok/pricenet",
+        visit: "https://pricenet.vishok.me"
+      },
+      {
+        img: "https://blog.vishok.me/static/images/projects/simplepolls.svg",
+        title: "SimplePolls",
+        desc: "SimplePolls is a versatile and user-friendly web application designed to facilitate the creation, sharing, and analysis of polls and surveys.",
+        github: "https://github.com/mvishok/simplepolls",
+        visit: "https://polls.vishok.me"
+      }
+    ];
+
+    // Helper: generate HTML for a skill article (exactly as original)
+    function createSkillArticle(skill) {
+      return `
+          <article style="display: flex; align-items: center; gap: 0.5rem;">
+            <img src="${skill.icon}" alt="Experience icon" class="icon" style="width: 32px; height: 32px;" />
+            <div style="text-align: left;">
+              <a href="${skill.link}" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
+                <h3 style="margin: 0;">${skill.name}</h3>
+              </a>
+              <p style="margin: 0;">${skill.level}</p>
+            </div>
+          </article>
+        `;
+    }
+
+    // Helper: generate a full category block (details-container)
+    function createCategoryBlock(category) {
+      let articlesHtml = '';
+      category.skills.forEach(skill => {
+        articlesHtml += createSkillArticle(skill);
+      });
+      return `
+          <div class="details-container">
+            <h2 class="experience-sub-title">${category.title}</h2>
+            <div class="article-container">
+              ${articlesHtml}
+            </div>
+          </div>
+        `;
+    }
+
+    // Render Experience section: two rows (first row: Frontend+Backend, second row: Desktop+Databases)
+    function renderExperience() {
+      const containers = document.querySelectorAll('#experience .experience-details-container');
+      if (containers.length !== 2) return;
+
+      // First row: Frontend (index 0) and Backend (index 1)
+      const row1Html = `
+          <div class="about-containers">
+            ${createCategoryBlock(skillsData[0])}
+            ${createCategoryBlock(skillsData[1])}
+          </div>
+        `;
+      // Second row: Desktop (index 2) and Databases (index 3)
+      const row2Html = `
+          <div class="about-containers">
+            ${createCategoryBlock(skillsData[2])}
+            ${createCategoryBlock(skillsData[3])}
+          </div>
+        `;
+
+      containers[0].innerHTML = row1Html;
+      containers[1].innerHTML = row2Html;
+    }
+
+    // Render Projects (Swiper slides) exactly preserving original structure and inline styles
+    function renderProjects() {
+      const swiperWrapper = document.querySelector('.swiper-wrapper');
+      if (!swiperWrapper) return;
+
+      let slidesHtml = '';
+      projectsData.forEach(project => {
+        slidesHtml += `
+        <div class="swiper-slide">
+            <div class="details-container color-container">
+              <div class="article-container">
+                <img
+                  src="${project.img}"
+                  alt="${project.title}"
+                  class="project-img"
+                />
+              </div>
+              <div class="text-content">
+                  <h2 class="experience-sub-title project-title">${project.title}</h2>
+                  <p class="description">${project.desc}</p>
+              </div>
+              <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="window.open('${project.github}', '_blank')">
+                  Github
+                </button>
+                ${project.visit ? `
+                <button class="btn btn-color-2 project-btn" onclick="window.open('${project.visit}', '_blank')">
+                  Visit
+                </button>` : ''}
+              </div>
+            </div>
+        </div>
+      `;
+      });
+      swiperWrapper.innerHTML = slidesHtml;
+    }
+
+    // Initialize Swiper after content is populated (preserves all original behavior)
+    function initSwiper() {
+      new Swiper('.swiper', {
+        direction: 'horizontal',
+        loop: true,
+        speed: 800,
+        grabCursor: true, // Shows the hand icon for dragging
+        centeredSlides: false,
+        initialSlide: 0,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+          dynamicBullets: false, // Changed to false for better looking pill shape
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+          },
+          1200: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+          },
+        },
+      });
+    }
+
+    // Run everything when DOM is ready, without altering any design or pixel
+    document.addEventListener('DOMContentLoaded', function () {
+      renderExperience();
+      renderProjects();
+      initSwiper();
+    });
+  </script>
+</body>
+
+</html>
