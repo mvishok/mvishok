@@ -433,8 +433,8 @@
     // Helper: generate HTML for a skill article (exactly as original)
     function createSkillArticle(skill) {
       return `
-          <article style="display: flex; align-items: center; gap: 0.5rem;">
-            <img src="${skill.icon}" alt="Experience icon" class="icon" style="width: 32px; height: 32px;" />
+          <article style="display: flex; align-items: center; gap: 0.5rem; width: 160px; justify-content: flex-start;">
+            <img src="${skill.icon}" alt="Experience icon" class="icon" style="width: 32px; min-width: 32px; height: 32px; object-fit: contain;" />
             <div style="text-align: left;">
               <a href="${skill.link}" style="text-decoration-line: none;" target="_blank" rel="noopener noreferrer">
                 <h3 style="margin: 0;">${skill.name}</h3>
