@@ -1,4 +1,4 @@
-<h2 align="left">Namaskaram 🙏! My name is Vishok and I'm a passionate, from <img src="assets/in.svg" height="18" alt="India"  /></h2>
+<h2 align="left">🙏 My name is Vishok and I'm a passionate, from <img src="assets/in.svg" height="18" alt="India"  /></h2>
 
 ###
 
