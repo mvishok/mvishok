@@ -1,0 +1,193 @@
+%-------------------------
+% Resume in LaTeX, based on Jake Gutierrez's template (MIT)
+% Master version: general Software Engineer / full stack. Tailor per JD.
+%-------------------------
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% ATS: no ligatures, so "fi"/"fl" extract as plain letters
+\ifdefined\XeTeXversion
+  \usepackage{fontspec}
+  \setmainfont{lmroman10-regular.otf}[BoldFont=lmroman10-bold.otf, ItalicFont=lmroman10-italic.otf,
+    BoldItalicFont=lmroman10-bolditalic.otf, SmallCapsFont=lmromancaps10-regular.otf, Ligatures={NoCommon}]
+\else
+  \usepackage[T1]{fontenc}
+  \usepackage{lmodern}
+  \usepackage{microtype}
+  \DisableLigatures{encoding = *, family = *}
+\fi
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-0.8in}
+\addtolength{\textheight}{1.7in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{\vspace{-4pt}\scshape\raggedright\large}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Make the PDF text machine readable for ATS parsers (pdfTeX only; XeTeX is Unicode already)
+\ifdefined\pdfgentounicode
+  \input{glyphtounicode}
+  \pdfgentounicode=1
+\fi
+
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=1pt, topsep=3pt, parsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
+
+%-------------------------------------------
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape M Vishok} \\ \vspace{3pt}
+    {\large Software Development Engineer} \\ \vspace{3pt}
+    \small Chennai, India $|$ \href{mailto:vishokmanikantan@gmail.com}{\underline{vishokmanikantan@gmail.com}} $|$
+    \href{https://linkedin.com/in/vishokmanikantan}{\underline{linkedin.com/in/vishokmanikantan}} $|$
+    \href{https://github.com/mvishok}{\underline{github.com/mvishok}} $|$
+    \href{https://vishok.in}{\underline{vishok.in}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {SRM Institute of Science and Technology}{Chennai, India}
+      {Bachelor of Technology in Computer Science and Engineering; CGPA: 9.27/10}{May 2027}
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements}
+ \begin{itemize}[leftmargin=0.3in, itemsep=1pt, topsep=2pt, parsep=0pt]
+    \small{\item \textbf{Selected for the Apple iOS Developer Cohort} out of 2,000+ applicants; published FitBond on the \textbf{App Store}}
+    \small{\item \textbf{1st place} at Sustainovate Expo'25 (SRM Events Connect) and Java Expo'24 (Minter), SRMIST}
+ \end{itemize}
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Java, TypeScript, JavaScript, Python, Go, PHP, SQL, Kotlin, Swift, HTML, CSS} \\ \vspace{1pt}
+     \textbf{Frameworks}{: React, Next.js, Node.js, Express, React Native, Laravel, Symfony, SwiftUI} \\ \vspace{1pt}
+     \textbf{Databases}{: PostgreSQL, MySQL, SQLite, Supabase, Firebase Firestore} \\ \vspace{1pt}
+     \textbf{Tools \& Cloud}{: Git, Azure DevOps, GitHub Actions, Docker, Azure Functions, Firebase, Cloudflare, Vercel, Linux} \\ \vspace{1pt}
+     \textbf{Other}{: Data Structures and Algorithms, RESTful APIs, Microservices, OAuth 2.0, Agile/Scrum}
+    }}
+ \end{itemize}
+
+%-----------EXPERIENCE-----------
+\section{Work Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Bajaj Finserv Health}{Jul 2026 -- Present}
+      {Software Development Engineer Intern}{Full-time, Onsite}
+      \resumeItemListStart
+        \resumeItem{Delivered frontend and \textbf{API} integration for insurance apps serving \textbf{$\sim$450K members}, \textbf{$\sim$2,000 providers}}
+        \resumeItem{Implemented \textbf{multi-factor auth} with SMS/email \textbf{OTP} and \textbf{refresh tokens} on an app with $\sim$50K downloads}
+        \resumeItem{Replaced manual builds with 4 \textbf{Azure DevOps CI/CD} pipelines for one product across web, Android and iOS}
+        \resumeItem{Integrated \textbf{Java} \textbf{REST} services into \textbf{React}, \textbf{Next.js} and legacy \textbf{Struts} screens}
+        \resumeItem{Wrote the frontend of a rule engine where authorized users define claim validation rules}
+        \resumeItem{Created the policy verification page that airport staff open by scanning the QR code on a member's policy}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Infosys}{Mar 2026 -- Apr 2026}
+      {iOS Developer Intern}{Internship}
+      \resumeItemListStart
+        \resumeItem{Led a 10-member team through four one-week \textbf{Scrum} sprints to ship a hospital app, placed top 3 of 12 teams}
+        \resumeItem{Engineered the administrator flow in \textbf{SwiftUI} and \textbf{Firebase} for staff, appointments, billing and revenue stats}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Aures} $|$ \emph{Next.js, Symfony, PostgreSQL, Azure Functions, Cloudflare} $|$ \href{https://github.com/auresorg}{\underline{GitHub}}}{Nov 2025 -- Jun 2026}
+          \resumeItemListStart
+            \resumeItem{Shipped a resume SaaS used by \textbf{about 100 users}, with live resume URLs, \textbf{OAuth 2.0} imports and \textbf{Razorpay}}
+            \resumeItem{Cut resume load time from \textbf{about 3s to 300--500ms} by serving static files instead of querying the database}
+            \resumeItem{Made PDF generation \textbf{5--6s faster} by running LaTeX inside \textbf{serverless functions} instead of a \textbf{Docker} service}
+      \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{SRM Events Connect} $|$ \emph{Laravel, Next.js, TypeScript, MySQL} $|$ \href{https://srmeventconnect.vercel.app/}{\underline{Live}}}{Feb 2025 -- Jan 2026}
+          \resumeItemListStart
+            \resumeItem{Automated paper event approvals with a 3-stage, 3-role web workflow used by \textbf{50+ conveners} at the university}
+            \resumeItem{Drafted the SRS, \textbf{database schema} and \textbf{RESTful APIs}; approvals now take minutes instead of days}
+            \resumeItem{Handled backend and database work in a 3-member team; won \textbf{1st place} at Sustainovate Expo'25}
+      \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{FASTRE} $|$ \emph{JavaScript, Node.js, npm} $|$ \href{https://github.com/mvishok/fastre}{\underline{GitHub}} $|$ \href{https://fastre.vishok.in}{\underline{Docs}}}{Apr 2024 -- Dec 2024}
+          \resumeItemListStart
+            \resumeItem{Designed a runtime for web pages and API prototypes in HTML-like syntax with directives and data binding}
+            \resumeItem{Added a package manager that installs from GitHub; published on \textbf{npm} across \textbf{181 commits} with a docs site}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------LEADERSHIP-----------
+\section{Leadership}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{President, AMIEE Club}: led a 30+ member club and created SlotShare (\textbf{Node.js}, \textbf{Express}, \textbf{MySQL}), cutting scheduling time by 70\%
+    }}
+ \end{itemize}
+
+%-----------PUBLICATION-----------
+\section{Publication}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \emph{A Cyber-Physical Automation Framework for Intelligent Energy Management and Safety in Hydrogen Fuel Cell Autonomous Vehicles}, ICARM 2026 (Mar 2026); wrote the battery management and control system in \textbf{Python}
+    }}
+ \end{itemize}
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \href{https://www.credly.com/badges/d65af190-177a-41af-9725-942f1a74ce59}{\underline{SAP Certified Data Analyst -- SAP Analytics Cloud}} (Apr 2026); \href{https://www.credly.com/badges/9c20feb9-24ae-4f3f-8358-dce8c76639aa}{\underline{SAP Back-End Developer -- ABAP Cloud}} (Apr 2026); NPTEL: Introduction to Database Systems (Apr 2025), Programming in Java (Oct 2024)
+    }}
+ \end{itemize}
+
+\end{document}
